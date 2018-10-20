@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBA45EBC2177563E00AFBDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA45EBB2177563E00AFBDA4 /* AppDelegate.swift */; };
+		DBA45EBE2177563E00AFBDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA45EBD2177563E00AFBDA4 /* ViewController.swift */; };
+		DBA45EC12177563E00AFBDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA45EBF2177563E00AFBDA4 /* Main.storyboard */; };
+		DBA45EC32177563F00AFBDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA45EC22177563F00AFBDA4 /* Assets.xcassets */; };
+		DBA45EC62177564000AFBDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA45EC42177564000AFBDA4 /* LaunchScreen.storyboard */; };
+		DBA45ED12177564000AFBDA4 /* HideBarViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA45ED02177564000AFBDA4 /* HideBarViewSampleTests.swift */; };
+		DBA45EDC2177564000AFBDA4 /* HideBarViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA45EDB2177564000AFBDA4 /* HideBarViewSampleUITests.swift */; };
+		DBA45EEA2177578800AFBDA4 /* HideBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA45EE92177578800AFBDA4 /* HideBarScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA45ECD2177564000AFBDA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA45EB02177563E00AFBDA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA45EB72177563E00AFBDA4;
+			remoteInfo = HideBarViewSample;
+		};
+		DBA45ED82177564000AFBDA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA45EB02177563E00AFBDA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA45EB72177563E00AFBDA4;
+			remoteInfo = HideBarViewSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBA45EB82177563E00AFBDA4 /* HideBarViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HideBarViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA45EBB2177563E00AFBDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBA45EBD2177563E00AFBDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBA45EC02177563E00AFBDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBA45EC22177563F00AFBDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBA45EC52177564000AFBDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBA45EC72177564000AFBDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA45ECC2177564000AFBDA4 /* HideBarViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideBarViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA45ED02177564000AFBDA4 /* HideBarViewSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideBarViewSampleTests.swift; sourceTree = "<group>"; };
+		DBA45ED22177564000AFBDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA45ED72177564000AFBDA4 /* HideBarViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideBarViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA45EDB2177564000AFBDA4 /* HideBarViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideBarViewSampleUITests.swift; sourceTree = "<group>"; };
+		DBA45EDD2177564000AFBDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA45EE92177578800AFBDA4 /* HideBarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HideBarScrollView.swift; path = ../HideBarView/HideBarScrollView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA45EB52177563E00AFBDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45EC92177564000AFBDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45ED42177564000AFBDA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA45EAF2177563E00AFBDA4 = {
+			isa = PBXGroup;
+			children = (
+				DBA45EE92177578800AFBDA4 /* HideBarScrollView.swift */,
+				DBA45EBA2177563E00AFBDA4 /* HideBarViewSample */,
+				DBA45ECF2177564000AFBDA4 /* HideBarViewSampleTests */,
+				DBA45EDA2177564000AFBDA4 /* HideBarViewSampleUITests */,
+				DBA45EB92177563E00AFBDA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA45EB92177563E00AFBDA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA45EB82177563E00AFBDA4 /* HideBarViewSample.app */,
+				DBA45ECC2177564000AFBDA4 /* HideBarViewSampleTests.xctest */,
+				DBA45ED72177564000AFBDA4 /* HideBarViewSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA45EBA2177563E00AFBDA4 /* HideBarViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				DBA45EBB2177563E00AFBDA4 /* AppDelegate.swift */,
+				DBA45EBD2177563E00AFBDA4 /* ViewController.swift */,
+				DBA45EBF2177563E00AFBDA4 /* Main.storyboard */,
+				DBA45EC22177563F00AFBDA4 /* Assets.xcassets */,
+				DBA45EC42177564000AFBDA4 /* LaunchScreen.storyboard */,
+				DBA45EC72177564000AFBDA4 /* Info.plist */,
+			);
+			path = HideBarViewSample;
+			sourceTree = "<group>";
+		};
+		DBA45ECF2177564000AFBDA4 /* HideBarViewSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA45ED02177564000AFBDA4 /* HideBarViewSampleTests.swift */,
+				DBA45ED22177564000AFBDA4 /* Info.plist */,
+			);
+			path = HideBarViewSampleTests;
+			sourceTree = "<group>";
+		};
+		DBA45EDA2177564000AFBDA4 /* HideBarViewSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA45EDB2177564000AFBDA4 /* HideBarViewSampleUITests.swift */,
+				DBA45EDD2177564000AFBDA4 /* Info.plist */,
+			);
+			path = HideBarViewSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBA45EB72177563E00AFBDA4 /* HideBarViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA45EE02177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSample" */;
+			buildPhases = (
+				DBA45EB42177563E00AFBDA4 /* Sources */,
+				DBA45EB52177563E00AFBDA4 /* Frameworks */,
+				DBA45EB62177563E00AFBDA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HideBarViewSample;
+			productName = HideBarViewSample;
+			productReference = DBA45EB82177563E00AFBDA4 /* HideBarViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBA45ECB2177564000AFBDA4 /* HideBarViewSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA45EE32177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSampleTests" */;
+			buildPhases = (
+				DBA45EC82177564000AFBDA4 /* Sources */,
+				DBA45EC92177564000AFBDA4 /* Frameworks */,
+				DBA45ECA2177564000AFBDA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA45ECE2177564000AFBDA4 /* PBXTargetDependency */,
+			);
+			name = HideBarViewSampleTests;
+			productName = HideBarViewSampleTests;
+			productReference = DBA45ECC2177564000AFBDA4 /* HideBarViewSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBA45ED62177564000AFBDA4 /* HideBarViewSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA45EE62177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSampleUITests" */;
+			buildPhases = (
+				DBA45ED32177564000AFBDA4 /* Sources */,
+				DBA45ED42177564000AFBDA4 /* Frameworks */,
+				DBA45ED52177564000AFBDA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA45ED92177564000AFBDA4 /* PBXTargetDependency */,
+			);
+			name = HideBarViewSampleUITests;
+			productName = HideBarViewSampleUITests;
+			productReference = DBA45ED72177564000AFBDA4 /* HideBarViewSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA45EB02177563E00AFBDA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Takao Horiguchi";
+				TargetAttributes = {
+					DBA45EB72177563E00AFBDA4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DBA45ECB2177564000AFBDA4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DBA45EB72177563E00AFBDA4;
+					};
+					DBA45ED62177564000AFBDA4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DBA45EB72177563E00AFBDA4;
+					};
+				};
+			};
+			buildConfigurationList = DBA45EB32177563E00AFBDA4 /* Build configuration list for PBXProject "HideBarViewSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBA45EAF2177563E00AFBDA4;
+			productRefGroup = DBA45EB92177563E00AFBDA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA45EB72177563E00AFBDA4 /* HideBarViewSample */,
+				DBA45ECB2177564000AFBDA4 /* HideBarViewSampleTests */,
+				DBA45ED62177564000AFBDA4 /* HideBarViewSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA45EB62177563E00AFBDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA45EC62177564000AFBDA4 /* LaunchScreen.storyboard in Resources */,
+				DBA45EC32177563F00AFBDA4 /* Assets.xcassets in Resources */,
+				DBA45EC12177563E00AFBDA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45ECA2177564000AFBDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45ED52177564000AFBDA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA45EB42177563E00AFBDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA45EBE2177563E00AFBDA4 /* ViewController.swift in Sources */,
+				DBA45EEA2177578800AFBDA4 /* HideBarScrollView.swift in Sources */,
+				DBA45EBC2177563E00AFBDA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45EC82177564000AFBDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA45ED12177564000AFBDA4 /* HideBarViewSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA45ED32177564000AFBDA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA45EDC2177564000AFBDA4 /* HideBarViewSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA45ECE2177564000AFBDA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA45EB72177563E00AFBDA4 /* HideBarViewSample */;
+			targetProxy = DBA45ECD2177564000AFBDA4 /* PBXContainerItemProxy */;
+		};
+		DBA45ED92177564000AFBDA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA45EB72177563E00AFBDA4 /* HideBarViewSample */;
+			targetProxy = DBA45ED82177564000AFBDA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBA45EBF2177563E00AFBDA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA45EC02177563E00AFBDA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBA45EC42177564000AFBDA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA45EC52177564000AFBDA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBA45EDE2177564000AFBDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBA45EDF2177564000AFBDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBA45EE12177564000AFBDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBA45EE22177564000AFBDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBA45EE42177564000AFBDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideBarViewSample.app/HideBarViewSample";
+			};
+			name = Debug;
+		};
+		DBA45EE52177564000AFBDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideBarViewSample.app/HideBarViewSample";
+			};
+			name = Release;
+		};
+		DBA45EE72177564000AFBDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HideBarViewSample;
+			};
+			name = Debug;
+		};
+		DBA45EE82177564000AFBDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8A6R8HVQ;
+				INFOPLIST_FILE = HideBarViewSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takaoh717.com.HideBarViewSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HideBarViewSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA45EB32177563E00AFBDA4 /* Build configuration list for PBXProject "HideBarViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA45EDE2177564000AFBDA4 /* Debug */,
+				DBA45EDF2177564000AFBDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA45EE02177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA45EE12177564000AFBDA4 /* Debug */,
+				DBA45EE22177564000AFBDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA45EE32177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA45EE42177564000AFBDA4 /* Debug */,
+				DBA45EE52177564000AFBDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA45EE62177564000AFBDA4 /* Build configuration list for PBXNativeTarget "HideBarViewSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA45EE72177564000AFBDA4 /* Debug */,
+				DBA45EE82177564000AFBDA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA45EB02177563E00AFBDA4 /* Project object */;
+}
