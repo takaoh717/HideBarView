@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, UIScrollViewDelegate, HideBarScrollView {
+class ViewController: UIViewController, UIScrollViewDelegate, HideBarScrollView, UIGestureRecognizerDelegate {
     
     var isBarHidden: Bool = false
     var isBarAnimating: Bool = false
@@ -22,13 +22,24 @@ class ViewController: UIViewController, UIScrollViewDelegate, HideBarScrollView 
         super.viewDidLoad()
         extendedLayoutIncludesOpaqueBars = true
         tabBarFrameOrigin = tabBarController?.tabBar.frame
-        
+                
         // for sample
         webView = WKWebView(frame:CGRect(x:0, y:0, width:self.view.bounds.size.width, height:self.view.bounds.size.height))
-        let url = URL(string: "https://www.google.com/")!
+        let url = URL(string: "https://github.com/takaoh717/HideBarView")!
         webView.load(URLRequest(url: url))
         view.addSubview(webView)
-        webView.scrollView.delegate = self
+        webView.scrollView.delegate = self  
+        
+        // hide when tap gesture
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+        tapGesture.delegate = self
+        webView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func tapped(_ sender: UITapGestureRecognizer){
+        if sender.state == .ended {
+            hiddenBar(!isBarHidden)
+        }
     }
     
     // is hide status bar
@@ -39,6 +50,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, HideBarScrollView 
     // animation type of status bar hidden
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         return .slide
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
